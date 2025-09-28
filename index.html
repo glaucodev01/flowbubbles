@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlowBubbles - A Cascata de Puzzles Infinita</title>
+    <link rel="icon" type="image/png" href="icon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
+    <script>
+        // MUDANÇA: Paleta de cores extraída da HomeScreen do seu app
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'theme-bg': '#191028',      // Roxo bem escuro (colorScheme.background)
+                        'theme-surface': '#2F2049',// Roxo escuro para os cartões (colorScheme.surface)
+                        'theme-primary': '#D92D8A',  // Rosa vibrante (colorScheme.primary)
+                        'theme-secondary': '#FF8A00',// Laranja para destaque (colorScheme.secondary)
+                        'theme-tertiary': '#00BFA5', // Verde-azulado para contraste (colorScheme.tertiary)
+                        'theme-text': '#F5F0FF',      // Branco levemente arroxeado
+                        'theme-text-secondary': '#BCA9E0', // Roxo claro para textos secundários
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            /* MUDANÇA: Gradiente de fundo sutil, como na HomeScreen */
+            background-color: #191028;
+            background-image: linear-gradient(to bottom right, #191028, #3a225e, #191028);
+        }
+        /* MUDANÇA: Gradiente para texto usando as cores primária e secundária */
+        .gradient-text {
+            background: linear-gradient(to right, #D92D8A, #FF8A00);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-theme-bg text-theme-text antialiased">
+
+    <header class="container mx-auto px-6 py-12 text-center">
+        <img src="icon.png" alt="Ícone do FlowBubbles" class="w-24 h-24 mx-auto mb-6 rounded-3xl shadow-lg">
+        <h1 class="text-5xl md:text-7xl font-black text-theme-secondary">FlowBubbles</h1>
+        <p class="mt-4 text-lg md:text-xl text-theme-text-secondary max-w-2xl mx-auto">
+            Mire, atire e crie cascatas espetaculares de bolhas neste puzzle de arcade viciante.
+        </p>
+        <div class="mt-8">
+            <a href="#" target="_blank" class="bg-theme-primary hover:bg-opacity-80 text-white font-bold py-4 px-10 rounded-full transition-transform transform hover:scale-105 inline-block text-lg shadow-lg">
+                Baixe na Google Play
+            </a>
+        </div>
+    </header>
+
+    <section class="container mx-auto px-6 py-10">
+        <div class="mx-auto max-w-md bg-theme-surface rounded-3xl p-4 border border-purple-900 shadow-2xl">
+            <img src="print.jpg" alt="Gameplay do FlowBubbles mostrando uma grande cascata de bolhas" class="rounded-2xl">
+        </div>
+    </section>
+
+    <main class="container mx-auto px-6 py-20">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-bold">Uma Aventura Estratégica</h2>
+            <p class="mt-3 text-lg text-theme-text-secondary">Cada nível é um novo desafio para sua mira e sua mente.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-theme-surface p-8 rounded-2xl border border-purple-800 transform hover:-translate-y-2 transition-transform shadow-lg">
+                <div class="text-4xl mb-4">♾️</div>
+                <h3 class="text-2xl font-bold mb-2">Desafios Infinitos</h3>
+                <p class="text-theme-text-secondary">Com milhares de níveis gerados por nossa IA, a diversão nunca acaba. Cada partida é um quebra-cabeça único!</p>
+            </div>
+            <div class="bg-theme-surface p-8 rounded-2xl border border-purple-800 transform hover:-translate-y-2 transition-transform shadow-lg">
+                <div class="text-4xl mb-4">🧠</div>
+                <h3 class="text-2xl font-bold mb-2">Quebra-Cabeças Únicos</h3>
+                <p class="text-theme-text-secondary">Enfrente bolhas especiais! Quebre o Gelo, liberte bolhas Acorrentadas e contorne as Pedras indestrutíveis.</p>
+            </div>
+            <div class="bg-theme-surface p-8 rounded-2xl border border-purple-800 transform hover:-translate-y-2 transition-transform shadow-lg">
+                <div class="text-4xl mb-4">🎯</div>
+                <h3 class="text-2xl font-bold mb-2">Física Justa e Precisa</h3>
+                <p class="text-theme-text-secondary">Nossa mira preditiva é 100% fiel. Onde você mirar é onde a bolha vai. Sua habilidade é a única coisa que importa.</p>
+            </div>
+            <div class="bg-theme-surface p-8 rounded-2xl border border-purple-800 transform hover:-translate-y-2 transition-transform shadow-lg">
+                <div class="text-4xl mb-4">📈</div>
+                <h3 class="text-2xl font-bold mb-2">Progressão Perfeita</h3>
+                <p class="text-theme-text-secondary">A dificuldade aumenta suavemente através de capítulos. Aprenda as mecânicas no seu ritmo e prepare-se para os desafios mais difíceis.</p>
+            </div>
+            <div class="bg-theme-surface p-8 rounded-2xl border border-purple-800 transform hover:-translate-y-2 transition-transform shadow-lg">
+                <div class="text-4xl mb-4">🎨</div>
+                <h3 class="text-2xl font-bold mb-2">Variedade Constante</h3>
+                <p class="text-theme-text-secondary">Nossas "Super-Receitas" combinam diferentes desafios em um só nível, garantindo que você nunca jogue a mesma coisa duas vezes.</p>
+            </div>
+            <div class="bg-theme-surface p-8 rounded-2xl border border-purple-800 transform hover:-translate-y-2 transition-transform shadow-lg">
+                <div class="text-4xl mb-4">✈️</div>
+                <h3 class="text-2xl font-bold mb-2">Jogue Offline</h3>
+                <p class="text-theme-text-secondary">Perfeito para sua viagem, tempo livre ou qualquer momento que você precisar de um desafio rápido. Não precisa de internet!</p>
+            </div>
+        </div>
+    </main>
+
+    <section class="text-center container mx-auto px-6 py-16">
+       <h2 class="text-4xl md:text-5xl font-bold gradient-text">Pronto para o desafio?</h2>
+       <div class="mt-8">
+            <a href="#" target="_blank" class="bg-theme-primary hover:bg-opacity-80 text-white font-bold py-4 px-10 rounded-full transition-transform transform hover:scale-105 inline-block text-lg shadow-lg">
+                Baixar Gratuitamente
+            </a>
+       </div>
+    </section>
+
+    <footer class="text-center py-8 px-6 border-t border-theme-surface">
+        <p class="text-theme-text-secondary">&copy; 2025 FlowBubbles. Todos os direitos reservados.</p>
+        
+        <div class="mt-4 flex justify-center items-center space-x-4 text-sm">
+            <a href="privacy_policy.html" class="text-theme-primary hover:text-opacity-80 transition-colors">
+                Política de Privacidade
+            </a>
+            <span class="text-theme-text-secondary">|</span>
+            <a href="terms_of_service.html" class="text-theme-primary hover:text-opacity-80 transition-colors">
+                Termos de Uso
+            </a>
+        </div>
+    </footer>
+
+</body>
+</html>
